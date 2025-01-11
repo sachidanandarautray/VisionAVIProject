@@ -1,4 +1,4 @@
-#This Python script is a utility for extracting frames from videos at a specified frame rate (frames per second). It can process multiple video files within a folder and save the extracted frames to a specified output directory.
+###This Python script is a utility for extracting frames from videos at a specified frame rate (frames per second). It can process multiple video files within a folder and save the extracted frames to a specified output directory.
 
 Features
 Extracts frames from videos at a configurable frame rate (e.g., 1 frame per second).
