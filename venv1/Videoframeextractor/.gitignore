@@ -1,0 +1,34 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+*.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Dependency directories
+node_modules/
+.env/
+
+# Python distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+*.bak
