@@ -27,3 +27,83 @@ A valid video file in the supported formats.
 Notes
 Ensure that the input folder contains valid video files.
 Modify the fps parameter as needed to extract more or fewer frames per second.
+
+
+
+      +----------------------------+
+      | Start                      |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Initialize VideoFrameExtractor |
+      | input_folder, output_folder3, fps  |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Check if output folder exists |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Loop through videos in the folder |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Check if file is a video    |
+      | (extensions: mp4, avi, mkv, mov) |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Call _process_video(video_path, video_file) |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Open video using cv2.VideoCapture |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Get the FPS of the video   |
+      | Calculate frame interval   |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Loop through video frames |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | If frame count is divisible by interval |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Save the extracted frame as an image |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Continue to next frame     |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Release video resources    |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | Completed processing of video |
+      +----------------------------+
+                |
+                v
+      +----------------------------+
+      | End                        |
+      +----------------------------+
+
